@@ -3,7 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>iSKI 滑雪課程</title>
+<title>NORA IS SKIING｜iSKI 滑雪課程</title>
+<meta property="og:title" content="NORA IS SKIING｜認識 iSKI 教練 Nora">
+<meta property="og:description" content="認識 Nora 教練：挑板型・選地點・看課程，最後用 LINE 洽詢。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://njkprosealing.github.io/NORASKIING/">
+<meta property="og:image" content="https://njkprosealing.github.io/NORASKIING/NORA%E5%80%8B%E4%BA%BA%E7%85%A7.jpg">
+<meta property="og:image:width" content="1115">
+<meta property="og:image:height" content="1672">
 <style>
   *{margin:0;padding:0;box-sizing:border-box;}
   body{font-family:'Inter','Segoe UI',Microsoft JhengHei,sans-serif;background:#f6f4ef;color:#1c2437;min-height:100vh;}
@@ -30,7 +37,7 @@
   @keyframes fadein{from{opacity:0;transform:translateY(12px);}to{opacity:1;transform:none;}}
   .pg0{grid-template-columns:360px 1fr;}
   .pg1{grid-template-columns:1fr 1fr;}
-  .pg2{grid-template-columns:repeat(3,1fr);}
+  .pg2{grid-template-columns:1fr;}
   .pg3{grid-template-rows:1fr auto;}
 
   .card{background:#fff;border:1px solid #ece7dd;border-radius:18px;box-shadow:0 8px 24px rgba(28,36,55,.06);height:100%;min-height:0;position:relative;overflow:hidden;}
@@ -99,6 +106,7 @@
     height: calc(100vh - 240px);
     overflow: hidden;
   }
+  .info-title{font-size:clamp(1.3rem,2.6vh,1.7rem);font-weight:800;color:#1c2437;margin-bottom:12px;}
   .info-sub-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -186,6 +194,8 @@
     .ph-card img{height:340px;}
     .c-row{grid-template-columns:1fr;}
     .pgrow{flex-wrap:wrap;}
+    .suggestion-text{padding:40px 24px;}
+    .suggestion-text p{white-space:normal;}
   }
   .page[data-pg="2"] {
     background: url('suggestion-bg.jpg') 5% 25%/cover no-repeat;
@@ -195,7 +205,7 @@
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0,0,0,0.55);
+    background: rgba(0,0,0,0.35);
     pointer-events: none;
   }
   .suggestion-text {
@@ -216,13 +226,6 @@
   }
   .suggestion-text p:last-child {
     margin-bottom: 0;
-  }
-  .page[data-pg="2"]::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0,0,0,0.35);
-    pointer-events: none;
   }
   .page[data-pg="2"] .suggestion {
     position: relative;
